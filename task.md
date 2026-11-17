@@ -122,3 +122,5 @@
 -   Tag the image with a version and write a release note explaining how
     it could be pushed to a registry.
 -   Explain how monitoring could be added to the stack.
+
+
