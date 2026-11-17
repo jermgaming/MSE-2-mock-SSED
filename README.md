@@ -1,6 +1,6 @@
 # CampusHub starter (9-service exam)
 
-The application code in `app/` is complete and works. Do not change it. Your job is the Docker work.
+The application code in `app/` is complete and works. Do not change it. Your job is the Docker work..
 
 ## Service contract
 | Service | Image or build | Port | Notes |
