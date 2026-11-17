@@ -1,0 +1,26 @@
+
+# Environment secrets
+.env
+.env.*
+
+# Allow example configuration
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Git
+.git/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
