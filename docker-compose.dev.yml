@@ -1,0 +1,22 @@
+# Development overrides — NOT loaded automatically (only
+# docker-compose.override.yml is). Merge it explicitly:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
+#
+# Differences from the default (production-style) configuration:
+#   - API/worker source is bind-mounted, so code edits only need a
+#     `docker compose restart api worker`, not a rebuild
+#   - restart policies are disabled so a crashing container stays visible
+#   - Postgres is published on the loopback interface for a local client
+services:
+  api:
+    restart: "no"
+    volumes:
+      - ./app/api/src:/app/src
+  worker:
+    restart: "no"
+    volumes:
+      - ./app/api/src:/app/src
+  db:
+    ports:
+      - "127.0.0.1:5432:5432"
