@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+node_modules/next
+app/frontend/dist/
+app/frontend/node_modules/
+grade-original.sh
