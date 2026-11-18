@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Instructor solution:  ./grade.sh
 # Student repo (run from their root, with .env present):  DC="docker compose" ENV_FILE=.env ./grade.sh
-DC="${DC:-docker compose -f solution/docker-compose.yml}"
-ENV_FILE="${ENV_FILE:-solution/.env}"
+DC="${DC:-docker compose}"
+ENV_FILE="${ENV_FILE:-.env}"
 set -a; . "$ENV_FILE"; set +a
 BASE="http://localhost:${GATEWAY_PORT:-8080}"
 PASS=0; FAIL=0
